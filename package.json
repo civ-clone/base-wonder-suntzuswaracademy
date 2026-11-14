@@ -1,0 +1,43 @@
+{
+  "name": "@civ-clone/base-wonder-suntzuswaracademy",
+  "version": "0.1.0",
+  "description": "The SunTzusWarAcademy class: a wonder.",
+  "repository": "git@github.com:civ-clone/base-wonder-suntzuswaracademy.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "SunTzusWarAcademy.js",
+    "SunTzusWarAcademy.d.ts",
+    "SunTzusWarAcademy.js.map",
+    "SunTzusWarAcademy.ts"
+  ],
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@civ-clone/core-city-build": "^0.1.22",
+    "@civ-clone/core-city-improvement": "^0.1.7",
+    "@civ-clone/core-data-object": "^0.1.19",
+    "@civ-clone/core-rule": "^0.1.9",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@civ-clone/core-wonder": "^0.1.5"
+  }
+}
